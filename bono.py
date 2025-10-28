@@ -26,6 +26,15 @@ def calcular_bono(sueldo,porcentaje):
 
     return sueldo_total 
 
+def mostrar_resumen(nombre, edad, cargo, sueldo_total):
+    print("RESUMEN DEL EMPLEADO")
+    print(f"Nombre: {nombre}")
+    print(f"Edad: {edad} años")
+    print(f"Cargo: {cargo}")
+    print(f"Sueldo total con bono: {sueldo_total:.2f}")
+
+
+
 
 print(calcular_bono(sueldo, porcentaje))
 

@@ -1,5 +1,17 @@
 #calcular_bono(sueldo, porcentaje) calcula el bono y devuelve el total
 #variables sueldo int y porcentaje del bono
+def ingresar_datos():
+        
+    nombre = str(input("Ingresa tu nombre: "))
+    edad = int(input("Ingresa tu edad: "))
+    cargo = str(input("Ingresa tu cargo: "))
+    sueldo = int(input("Ingresa tu sueldo: "))
+    porcentaje = float(input("Ingresa el porcentaje de aumento: "))
+
+    return nombre, edad, cargo, sueldo, porcentaje
+
+nombre, edad, cargo, sueldo, porcentaje = ingresar_datos()
+print(f"Un gusto {nombre}, tus datos han sido ingresados correctamente.")
 
 sueldo = int(input("Ingrese sueldo: "))
 porcentaje = float(input("Ingrese porcentaje de bono: "))
@@ -16,3 +28,6 @@ def calcular_bono(sueldo,porcentaje):
 
 
 print(calcular_bono(sueldo, porcentaje))
+
+
+
